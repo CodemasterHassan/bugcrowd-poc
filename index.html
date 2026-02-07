@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>For more security</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Awareness Form</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -25,9 +26,7 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     input[type="text"],
-    input[type="password"],
-    input[type="email"],
-    input[type="number"] {
+    input[type="email"] {
       width: 100%;
       padding: 10px;
       margin: 10px 0 20px;
@@ -47,34 +46,32 @@
     button:hover {
       background-color: #2980b9;
     }
+    .note {
+      font-size: 14px;
+      color: #e74c3c;
+      margin-bottom: 15px;
+    }
   </style>
 </head>
 <body>
   <div class="header">
-    <h1>Amazon Secure Dashboard</h1>
+    <h1>Security Verification Demo</h1>
   </div>
+
   <div class="container">
-    <p><strong>Important:</strong> For security reasons, please update your credentials and payment information to continue accessing your rewards.</p>
-    <form>
-      <label>Email</label>
-      <input type="email" placeholder="Enter your email" required>
+    <p class="note"><strong>Note:</strong> This is a cybersecurity awareness demo form. Do NOT enter real credentials.</p>
 
-      <label>Current Password</label>
-      <input type="password" placeholder="Enter current password" required>
+    <form action="#" method="POST">
+      <label>Email Address</label>
+      <input type="email" placeholder="example@email.com" required>
 
-      <label>New Password</label>
-      <input type="password" placeholder="Enter new password" required>
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your name" required>
 
-      <label>Bank Account Number</label>
-      <input type="number" placeholder="Enter card number" required>
+      <label>Favorite Color (Demo Question)</label>
+      <input type="text" placeholder="Just for UI practice" required>
 
-      <label>Account Holder Name</label>
-      <input type="number" placeholder="Enter Holder Name" required>
-
-      <label>Bank  Name</label>
-      <input type="number" placeholder="Enter Bank Name" required>
-
-      <button type="submit">Update Now</button>
+      <button type="submit">Submit</button>
     </form>
   </div>
 </body>
